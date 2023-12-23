@@ -12,7 +12,7 @@ export default () => {
             grade: e.target.grade.value,
         };
         axios
-            .post('http://localhost:5000/students', formData)
+            .post('http://localhost:3000/api/students', formData)
             .then((response) => {
                 console.log('New student added:', response.data);
                 setSuccess(true);
@@ -29,14 +29,16 @@ export default () => {
                     Name:
                     <input name="name" type="text" />
                 </label>
-                <label>
-                    Age:
-                    <input name="age" type="number" />
-                </label>
-                <label>
-                    Grade:
-                    <input name="grade" type="text" />
-                </label>
+                <div className="small-field">
+                    <label>
+                        Age:
+                        <input name="age" type="number" />
+                    </label>
+                    <label>
+                        Grade:
+                        <input name="grade" type="text" />
+                    </label>
+                </div>
                 <button type="submit">Add Student</button>
             </form>
         );
@@ -45,7 +47,9 @@ export default () => {
     return (
         <div>
             {!success && <FormComponent />}
-            {success && <p>Student added successfully!</p>}
+            {success && (
+                <div className="message">Student added successfully!</div>
+            )}
         </div>
     );
 };

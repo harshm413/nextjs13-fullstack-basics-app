@@ -1,0 +1,163 @@
+/* globals.css */
+
+/* ... (existing styles) */
+
+/* Center the home button */
+html {
+    background-color: #f8f8f8; /* Adjust the background color as needed */
+    font-family: 'Arial', sans-serif; /* Adjust the font family as needed */
+}
+
+/* Style the container for centering and limiting width */
+.container {
+    max-width: 650px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add some padding to the container */
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the header section */
+.header-section {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the home button */
+.home-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0070f3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.home-button a:hover {
+    background-color: #0056b3;
+}
+
+.select-button-area {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Style the links inside the select button area */
+.select-button-area a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0070f3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.select-button-area a:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    color: #333;
+}
+
+.buttons-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the buttons inside the buttons area */
+.buttons-area button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons-area button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+form label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Style form inputs */
+form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style form button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.small-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style small-field label container */
+.small-field label {
+    width: 50%; /* Make labels take full width */
+    margin-bottom: 8px;
+}
+
+/* Style small-field inputs */
+.small-field input {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}

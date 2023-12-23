@@ -1,3 +1,4 @@
+'use client';
 export default () => {
-    return <div>Select the options from above.</div>;
+    return <div className="message">Select the options from above.</div>;
 };

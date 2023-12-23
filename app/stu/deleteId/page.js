@@ -9,7 +9,7 @@ export default () => {
 
         let id = e.target.id.value;
         axios
-            .delete(`http://localhost:5000/students/${id}`)
+            .delete(`http://localhost:3000/api/students/${id}`)
             .then(() => {
                 console.log(`Student with ID ${id} deleted`);
                 setDeleted(true);
@@ -32,7 +32,9 @@ export default () => {
     return (
         <div>
             {!deleted && <FormComponent />}
-            {deleted && <p>Student deleted successfully!</p>}
+            {deleted && (
+                <div className="message">Student deleted successfully!</div>
+            )}
         </div>
     );
 };

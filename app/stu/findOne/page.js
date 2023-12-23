@@ -7,7 +7,7 @@ export default () => {
 
     function fetchStudentDetails(studentId) {
         axios
-            .get(`http://localhost:5000/students/${studentId}`)
+            .get(`http://localhost:3000/api/students/${studentId}`)
             .then((response) => {
                 setStudent(response.data);
             });
