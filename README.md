@@ -7,7 +7,7 @@ Welcome to my Next.js project! This project demonstrates the basics of setting u
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/my-nextjs-project.git
+    git clone https://github.com/harshm413/nextjs13-fullstack-basics-app.git
     ```
 
 2. Navigate to the project directory:
